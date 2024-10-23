@@ -9,11 +9,6 @@ let wynik = document.getElementById("wynik");
 function dzik()
 {
     i++;
-    if(i%7==0 || i.toString().includes('7')==true)
-    {
-         guzik=true;
-         licznikp++;
-    }
     console.log(i);
     p1.textContent=i;
     if((i-1)%7==0 || (i-1).toString().includes('7')==true)
@@ -23,6 +18,11 @@ function dzik()
             clearInterval(przerwa);
             alert("Przegrałeś!");
         }
+    }
+    if(i%7==0 || i.toString().includes('7')==true)
+    {
+         guzik=true;
+         licznikp++;
     }
    
 }
